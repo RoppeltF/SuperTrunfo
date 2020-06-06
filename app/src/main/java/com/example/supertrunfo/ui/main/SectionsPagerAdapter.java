@@ -43,6 +43,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Fragment fragment = null;
         switch (position){
             case 0:
+                //fragment = new batman();
                 fragment = new batman();
                 break;
             case 1:

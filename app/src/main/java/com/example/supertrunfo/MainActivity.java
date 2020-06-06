@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
 
         tabs.getTabAt(viewPager.getCurrentItem()).setIcon(R.drawable.ic_batman);
-        nomeHeroi.setText( heroi[tabs.getSelectedTabPosition() ]  ) ;
+        nomeHeroi.setText( heroi[tabs.getSelectedTabPosition()]  ) ;
 
 
 /*

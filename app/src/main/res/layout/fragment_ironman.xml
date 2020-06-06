@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".batman">
+    tools:context=".ironman">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -16,6 +16,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="#303">
+
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -28,20 +29,59 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="#605">
+            android:backgroundTint="#605"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ATAQUE - >" />
+                android:fontFamily="casual"
+                android:text="Mark I ->  " />
+
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/bt_item1Power"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Batrang" />
+                android:fontFamily="casual" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Mark XLIII ->  " />
+
+            <TextView
+                android:id="@+id/bt_item2Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Mark XLIV ->  " />
+
+            <TextView
+                android:id="@+id/bt_item3Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Mark XXVI ->  " />
+
+            <TextView
+                android:id="@+id/bt_item4Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual" />
 
         </LinearLayout>
     </LinearLayout>
+
 
 </FrameLayout>

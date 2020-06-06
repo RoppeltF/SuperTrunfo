@@ -28,18 +28,50 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:backgroundTint="#605">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ATAQUE - >" />
+                android:fontFamily="cursive"
+                android:text="Batrangue ->  " />
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/bt_item1Power"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Batrang" />
+                android:fontFamily="cursive"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Bomba de fumaça ->  " />
+            <TextView
+                android:id="@+id/bt_item2Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Granadas Sonicas ->  " />
+            <TextView
+                android:id="@+id/bt_item3Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Granadas de luz ->  " />
+            <TextView
+                android:id="@+id/bt_item4Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
 
         </LinearLayout>
     </LinearLayout>

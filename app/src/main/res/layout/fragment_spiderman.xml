@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".batman">
+    tools:context=".spiderman">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -28,18 +28,42 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:backgroundTint="#605">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ATAQUE - >" />
+                android:text="Bolas de Teia ->  " />
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/bt_item1Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Batrang" />
-
+                android:text="Sentido aranha ->  " />
+            <TextView
+                android:id="@+id/bt_item2Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lancador de Teias ->  " />
+            <TextView
+                android:id="@+id/bt_item3Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aranhas Robo ->  " />
+            <TextView
+                android:id="@+id/bt_item4Power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </LinearLayout>
