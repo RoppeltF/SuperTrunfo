@@ -12,7 +12,8 @@ import com.example.supertrunfo.R;
 public class PageViewModel extends ViewModel {
 
 
-    private String heroi[] = {"Super-Homem","Homem-Aranha","Homem de Ferro","Drax","Groot","Batman","DeadPool","Thor"};
+   private String heroi[] = {"BatMan","Homem-Aranha","Homem de Ferro","Drax","Groot","SuperMan","DeadPool","Thor"};
+
 
 
     private MutableLiveData<Integer> mIndex = new MutableLiveData<>();
@@ -31,3 +32,4 @@ public class PageViewModel extends ViewModel {
         return mText;
     }
 }
+

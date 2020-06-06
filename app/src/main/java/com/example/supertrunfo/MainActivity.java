@@ -1,5 +1,6 @@
 package com.example.supertrunfo;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -23,9 +24,8 @@ import static java.lang.String.valueOf;
 
 public class MainActivity extends AppCompatActivity {
 
- //   private String heroi[] = {"Super-Homem","Homem-Aranha","Homem de Ferro","Drax","Groot","Batman","DeadPool","Thor"};
-
-    Map<String, String> pairs = new HashMap<String,String>();
+    private String heroi[] = {"Batman","Homem-Aranha","Homem de Ferro","Drax","Groot","Superman","DeadPool","Thor"};
+    /*Map<String, String> pairs = new HashMap<String,String>();*/
  //   pairs.puts( "cap_america" , "R.drawable.ic_cap_america" );
 
 
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         tabs.setupWithViewPager(viewPager);
 
-      //  tabs.getTabAt(viewPager.getCurrentItem()).setIcon(pairs.get("cap_america") );
-        nomeHeroi.setText( "chang" ) ;
+        tabs.getTabAt(viewPager.getCurrentItem()).setIcon(R.drawable.ic_batman);
+        nomeHeroi.setText( heroi[tabs.getSelectedTabPosition() ]  ) ;
 
 
 /*
