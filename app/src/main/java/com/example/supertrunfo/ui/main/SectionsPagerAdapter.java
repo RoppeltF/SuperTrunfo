@@ -10,8 +10,12 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.supertrunfo.R;
 import com.example.supertrunfo.batman;
+import com.example.supertrunfo.deadpool;
 import com.example.supertrunfo.ironman;
 import com.example.supertrunfo.spiderman;
+import com.example.supertrunfo.superman;
+import com.example.supertrunfo.thor;
+import com.example.supertrunfo.wolverine;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -21,12 +25,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
 
     @StringRes
-
     private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3,
                                                       R.string.tab_text_4,R.string.tab_text_5,R.string.tab_text_6,
-                                                      R.string.tab_text_7,R.string.tab_text_8};
+                                                      R.string.tab_text_7};
 
-   /* private static final int[] TAB_TITLES = new int[]{R.drawable.ic_batman, R.drawable.ic_spider, R.drawable.ic_ironman,R.drawable.ic_superman};*/
+    private static final int[] TAB_ICONS = new int[]{R.drawable.ic_batman, R.drawable.ic_spider, R.drawable.ic_ironman,R.drawable.ic_superman};
 
     private final Context mContext;
 
@@ -52,9 +55,23 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 fragment = new ironman();
                 break;
+            case 3:
+                //fragment = new batman();
+                fragment = new deadpool();
+                break;
+            case 4:
+                fragment = new superman();
+                break;
+            case 5:
+                fragment = new thor();
+                break;
+            case 6:
+                fragment = new wolverine();
+                break;
         }
         return fragment;
     }
+
 
     @Nullable
     @Override
@@ -65,7 +82,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 3;
+        return 6;
         //return TAB_TITLES.length;
     }
 }

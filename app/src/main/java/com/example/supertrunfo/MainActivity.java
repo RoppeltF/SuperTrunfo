@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String heroi[] = {"Batman","Homem-Aranha","Homem de Ferro","Drax","Groot","Superman","DeadPool","Thor"};
     /*Map<String, String> pairs = new HashMap<String,String>();*/
- //   pairs.puts( "cap_america" , "R.drawable.ic_cap_america" );
+
 
 
     @Override
@@ -39,23 +39,35 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         TextView nomeHeroi = findViewById(R.id.heroiNome);
 
-
         tabs.setupWithViewPager(viewPager);
 
-        tabs.getTabAt(viewPager.getCurrentItem()).setIcon(R.drawable.ic_batman);
-        nomeHeroi.setText( heroi[tabs.getSelectedTabPosition()]  ) ;
+
+        tabs.getTabAt( 0 ).setIcon(R.drawable.ic_batman);
+        tabs.getTabAt( 1 ).setIcon(R.drawable.ic_spider);
+        tabs.getTabAt( 2 ).setIcon(R.drawable.ic_ironman);
+        tabs.getTabAt( 3 ).setIcon(R.drawable.ic_deadpool);
+        tabs.getTabAt( 4 ).setIcon(R.drawable.ic_thor);
+        tabs.getTabAt( 5 ).setIcon(R.drawable.ic_wolverine);
+
+        if ( tabs.getContentDescription() == "batman" ) {
+            nomeHeroi.setText( heroi[1] );
+        }
+        if ( tabs.getContentDescription() == "spider" ) {
+            nomeHeroi.setText( heroi[2] );
+        }
+        if ( tabs.getSelectedTabPosition() == 3 ) {
+            nomeHeroi.setText( heroi[3] );
+        }
 
 
-/*
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Lutar !!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
-*/
 
 
     }

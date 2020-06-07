@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".spiderman">
+    tools:context=".deadpool">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -14,17 +14,18 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:backgroundTint="#303">
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_spider" />
+                android:src="@drawable/ic_deadpool" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -33,36 +34,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bolas de Teia ->  " />
+                android:fontFamily="cursive"
+                android:text="Batrangue ->  " />
             <TextView
                 android:id="@+id/bt_item1Power"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sentido aranha ->  " />
+                android:fontFamily="cursive"
+                android:text="Bomba de fumaça ->  " />
             <TextView
                 android:id="@+id/bt_item2Power"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lancador de Teias ->  " />
+                android:fontFamily="cursive"
+                android:text="Granadas Sonicas ->  " />
             <TextView
                 android:id="@+id/bt_item3Power"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aranhas Robo ->  " />
+                android:fontFamily="cursive"
+                android:text="Granadas de luz ->  " />
             <TextView
                 android:id="@+id/bt_item4Power"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"/>
 
         </LinearLayout>
     </LinearLayout>
