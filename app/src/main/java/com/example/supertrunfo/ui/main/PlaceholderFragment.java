@@ -18,6 +18,7 @@ import com.example.supertrunfo.R;
 /**
  * A placeholder fragment containing a simple view.
  */
+
 public class PlaceholderFragment extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
@@ -47,14 +48,6 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-<<<<<<< Updated upstream
-        View root = inflater.inflate(R.layout.fragment_main, container, false);
-        final TextView textView = root.findViewById(R.id.section_label);
-        pageViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-=======
             View root = inflater.inflate(R.layout.fragment_main, container, false);
 
             final ImageView imgHeroi = root.findViewById(R.id.imageView3);
@@ -108,38 +101,38 @@ public class PlaceholderFragment extends Fragment {
                 }else if ( index == 3 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_ironman);
-                    txt_item1.setText("Spider web:");
-                    txt_item1power.setText("123");
-                    txt_item2.setText("Arasd:");
-                    txt_item2power.setText("456");
+                    txt_item1.setText("S45hsd web:");
+                    txt_item1power.setText("333");
+                    txt_item2.setText("Ajghj:");
+                    txt_item2power.setText("333");
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("789");
-                    txt_item4.setText("dfasdf");
-                    txt_item4power.setText("000");
+                    txt_item3power.setText("444");
+                    txt_item4.setText("asdf");
+                    txt_item4power.setText("444");
 
                 }else if ( index == 4 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_deadpool);
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("123");
+                    txt_item1power.setText("555");
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("456");
+                    txt_item2power.setText("555");
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("789");
+                    txt_item3power.setText("555");
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("000");
+                    txt_item4power.setText("555");
 
                 }else if ( index == 5 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_superman);
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("123");
+                    txt_item1power.setText("666");
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("456");
+                    txt_item2power.setText("666");
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("789");
+                    txt_item3power.setText("666");
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("000");
+                    txt_item4power.setText("666");
 
                 }else if ( index == 6 ){
 
@@ -153,13 +146,13 @@ public class PlaceholderFragment extends Fragment {
                     txt_item4.setText("dfasdf");
                     txt_item4power.setText("000");
                 }
->>>>>>> Stashed changes
 
 
 
             }
 
         });
+
         return root;
     }
 }

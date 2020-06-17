@@ -42,11 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
         tabs.setupWithViewPager(viewPager);
 
-      //  tabs.getTabAt(viewPager.getCurrentItem()).setIcon(pairs.get("cap_america") );
+        tabs.getTabAt( 0 ).setIcon(R.drawable.ic_batman);
+        tabs.getTabAt( 1 ).setIcon(R.drawable.ic_spider);
+        tabs.getTabAt( 2 ).setIcon(R.drawable.ic_ironman);
+        tabs.getTabAt( 3 ).setIcon(R.drawable.ic_deadpool);
+        tabs.getTabAt( 4 ).setIcon(R.drawable.ic_superman);
+        tabs.getTabAt( 5 ).setIcon(R.drawable.ic_wolverine);
+
         nomeHeroi.setText( "chang" ) ;
 
 
-/*
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-*/
+
 
 
     }

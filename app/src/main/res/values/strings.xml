@@ -1,13 +1,12 @@
 <resources>
     <string name="app_name">Super Trunfo</string>
-    <string name="tab_text_1">Super-Homem</string>
+
+    <string name="tab_text_1">Barman</string>
     <string name="tab_text_2">Homem-Aranha</string>
     <string name="tab_text_3">Homem de Ferro</string>
-    <string name="tab_text_4">Drax</string>
-    <string name="tab_text_5">Groot</string>
-    <string name="tab_text_6">Batman</string>
-    <string name="tab_text_7">DeadPool</string>
-    <string name="tab_text_8">Thor</string>
+    <string name="tab_text_4">DeadPool</string>
+    <string name="tab_text_5">Superman</string>
+    <string name="tab_text_6">Wolverine</string>
 
 
 
