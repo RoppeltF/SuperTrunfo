@@ -6,8 +6,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
-import com.example.supertrunfo.R;
-
 
 public class PageViewModel extends ViewModel {
 
@@ -19,7 +17,11 @@ public class PageViewModel extends ViewModel {
     private LiveData<String> mText = Transformations.map(mIndex, new Function<Integer, String>() {
         @Override
         public String apply(Integer input) {
+<<<<<<< Updated upstream
             return "Hello I'm " + heroi[input-1];
+=======
+            return input.toString();
+>>>>>>> Stashed changes
         }
     });
 
