@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.supertrunfo.ui.main.SectionsPagerAdapter;
@@ -23,10 +24,8 @@ import static java.lang.String.valueOf;
 
 public class MainActivity extends AppCompatActivity {
 
- //   private String heroi[] = {"Super-Homem","Homem-Aranha","Homem de Ferro","Drax","Groot","Batman","DeadPool","Thor"};
 
-    Map<String, String> pairs = new HashMap<String,String>();
- //   pairs.puts( "cap_america" , "R.drawable.ic_cap_america" );
+     private ListView lvLista;
 
 
     @Override
@@ -38,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         TextView nomeHeroi = findViewById(R.id.heroiNome);
+        nomeHeroi = findViewById(R.id.heroiNome);
 
+        lvLista = findViewById(R.id.lvLista);
 
         tabs.setupWithViewPager(viewPager);
 
@@ -54,11 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setImageResource(R.drawable.ic_swords);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+
+                Snackbar.make(view, "Time to Fight ! ", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
 

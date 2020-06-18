@@ -15,6 +15,11 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.supertrunfo.R;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 /**
  * A placeholder fragment containing a simple view.
  */
@@ -73,78 +78,107 @@ public class PlaceholderFragment extends Fragment {
                     index = getArguments().getInt(ARG_SECTION_NUMBER);
                 }
 
+                List<Integer> rdn = new ArrayList<Integer>();
+
+                for( int i=0 ; i <=4; i++ ){
+
+                    rdn.add( RandInt( 5, 10 ) );
+                }
+
                 if ( index == 1 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_batman);
 
                     txt_item1.setText("Batrang:");
-                    txt_item1power.setText("222");
+                    txt_item1power.setText( rdn.get(0).toString() );
+
                     txt_item2.setText("Granada Sonica:");
-                    txt_item2power.setText("333");
+                    txt_item2power.setText( rdn.get(1).toString() );
+
                     txt_item3.setText("Bomba de Fumaça:");
-                    txt_item3power.setText("444");
+                    txt_item3power.setText(rdn.get(2).toString());
+
                     txt_item4.setText("Granadas de Luz:");
-                    txt_item4power.setText("555");
+                    txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 2 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_spider);
+
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("123");
+                    txt_item1power.setText(rdn.get(0).toString());
+
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("456");
+                    txt_item2power.setText(rdn.get(1).toString());
+
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("789");
+                    txt_item3power.setText( rdn.get(2).toString() );
+
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("000");
+                    txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 3 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_ironman);
                     txt_item1.setText("S45hsd web:");
-                    txt_item1power.setText("333");
+                    txt_item1power.setText(rdn.get(0).toString());
+
                     txt_item2.setText("Ajghj:");
-                    txt_item2power.setText("333");
+                    txt_item2power.setText(rdn.get(1).toString());
+
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("444");
+                    txt_item3power.setText( rdn.get(2).toString() );
+
                     txt_item4.setText("asdf");
-                    txt_item4power.setText("444");
+                    txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 4 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_deadpool);
+
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("555");
+                    txt_item1power.setText(rdn.get(0).toString());
+
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("555");
+                    txt_item2power.setText(rdn.get(1).toString());
+
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("555");
+                    txt_item3power.setText( rdn.get(2).toString() );
+
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("555");
+                    txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 5 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_superman);
+
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("666");
+                    txt_item1power.setText(rdn.get(0).toString());
+
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("666");
+                    txt_item2power.setText(rdn.get(1).toString());
+
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("666");
+                    txt_item3power.setText( rdn.get(2).toString() );
+
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("666");
+                    txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 6 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_wolverine);
+
                     txt_item1.setText("Spider web:");
-                    txt_item1power.setText("123");
+                    txt_item1power.setText(rdn.get(0).toString());
+
                     txt_item2.setText("Arasd:");
-                    txt_item2power.setText("456");
+                    txt_item2power.setText(rdn.get(1).toString());
+
                     txt_item3.setText("yrtu de acaf:");
-                    txt_item3power.setText("789");
+                    txt_item3power.setText(rdn.get(2).toString());
+
                     txt_item4.setText("dfasdf");
-                    txt_item4power.setText("000");
+                    txt_item4power.setText( rdn.get(3).toString() );
                 }
 
 
@@ -155,4 +189,14 @@ public class PlaceholderFragment extends Fragment {
 
         return root;
     }
+
+
+    public static int RandInt(int min, int max) {
+        Random rand = new Random();
+        int randomNumber = rand.nextInt((max + 1) - min) + min;
+
+        return randomNumber;
+    }
+
+
 }

@@ -9,7 +9,8 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:backgroundTint="#5A5A5A">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -48,8 +49,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
-
+            android:backgroundTint="#5A5A5A"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -65,6 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="#5A5A5A"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
