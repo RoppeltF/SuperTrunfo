@@ -105,79 +105,79 @@ public class PlaceholderFragment extends Fragment {
 
                     imgHeroi.setImageResource(R.drawable.ic_spider);
 
-                    txt_item1.setText("Spider web:");
+                    txt_item1.setText("Punhos de teia:");
                     txt_item1power.setText(rdn.get(0).toString());
 
-                    txt_item2.setText("Arasd:");
+                    txt_item2.setText("Bomba de Teia:");
                     txt_item2power.setText(rdn.get(1).toString());
 
-                    txt_item3.setText("yrtu de acaf:");
+                    txt_item3.setText("Aranhas robos:");
                     txt_item3power.setText( rdn.get(2).toString() );
 
-                    txt_item4.setText("dfasdf");
+                    txt_item4.setText("Sentido Aranha");
                     txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 3 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_ironman);
-                    txt_item1.setText("S45hsd web:");
+                    txt_item1.setText("Repulsores:");
                     txt_item1power.setText(rdn.get(0).toString());
 
-                    txt_item2.setText("Ajghj:");
+                    txt_item2.setText("Misseis:");
                     txt_item2power.setText(rdn.get(1).toString());
 
-                    txt_item3.setText("yrtu de acaf:");
+                    txt_item3.setText("Resistencia:");
                     txt_item3power.setText( rdn.get(2).toString() );
 
-                    txt_item4.setText("asdf");
+                    txt_item4.setText("Velocidade");
                     txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 4 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_deadpool);
 
-                    txt_item1.setText("Spider web:");
+                    txt_item1.setText("Katana:");
                     txt_item1power.setText(rdn.get(0).toString());
 
-                    txt_item2.setText("Arasd:");
+                    txt_item2.setText("Agilidade:");
                     txt_item2power.setText(rdn.get(1).toString());
 
-                    txt_item3.setText("yrtu de acaf:");
+                    txt_item3.setText("Super Força:");
                     txt_item3power.setText( rdn.get(2).toString() );
 
-                    txt_item4.setText("dfasdf");
+                    txt_item4.setText("Regeneração");
                     txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 5 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_superman);
 
-                    txt_item1.setText("Spider web:");
+                    txt_item1.setText("Super Força:");
                     txt_item1power.setText(rdn.get(0).toString());
 
-                    txt_item2.setText("Arasd:");
+                    txt_item2.setText("Visão Laser:");
                     txt_item2power.setText(rdn.get(1).toString());
 
-                    txt_item3.setText("yrtu de acaf:");
+                    txt_item3.setText("Resistencia:");
                     txt_item3power.setText( rdn.get(2).toString() );
 
-                    txt_item4.setText("dfasdf");
+                    txt_item4.setText("Agilidade:");
                     txt_item4power.setText( rdn.get(3).toString() );
 
                 }else if ( index == 6 ){
 
                     imgHeroi.setImageResource(R.drawable.ic_wolverine);
 
-                    txt_item1.setText("Spider web:");
+                    txt_item1.setText("Ataque 1:");
                     txt_item1power.setText(rdn.get(0).toString());
 
-                    txt_item2.setText("Arasd:");
+                    txt_item2.setText("Ataque 2:");
                     txt_item2power.setText(rdn.get(1).toString());
 
-                    txt_item3.setText("yrtu de acaf:");
+                    txt_item3.setText("Garras deAdamantium:");
                     txt_item3power.setText(rdn.get(2).toString());
 
-                    txt_item4.setText("dfasdf");
+                    txt_item4.setText("Regeneração");
                     txt_item4power.setText( rdn.get(3).toString() );
                 }
 
